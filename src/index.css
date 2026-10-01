@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* Hadron brand: deep green + gold, cyan accent (from hadroninsurance.com), Playfair Display + Inter. */
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Playfair Display", Georgia, "Times New Roman", serif;
+  --color-brand-50: #eef7f4;
+  --color-brand-100: #d5ece5;
+  --color-brand-200: #aad8cb;
+  --color-brand-300: #76bda9;
+  --color-brand-400: #449f87;
+  --color-brand-500: #2e796a;
+  --color-brand-600: #22685a;
+  --color-brand-700: #185749;
+  --color-brand-800: #0c473b;
+  --color-brand-900: #083529;
+  --color-gold-50: #fbf5ea;
+  --color-gold-100: #f5e6c8;
+  --color-gold-300: #e2b872;
+  --color-gold-500: #cc9139;
+  --color-gold-600: #b07a2b;
+  --color-cyan-brand: #6de4fa;
+}
+
+body {
+  background-color: #f6f8f7;
+  color: var(--color-slate-800);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
+
+/* Subtle page background: soft green wash with a faint dot grid */
+.bg-hadron {
+  background-color: #f6f8f7;
+  background-image: radial-gradient(rgba(12, 71, 59, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
